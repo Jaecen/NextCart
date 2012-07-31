@@ -40,20 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IDescriptionQuery.cs" />
-    <Compile Include="IIdentifierQuery.cs" />
-    <Compile Include="IInventoryQuery.cs" />
-    <Compile Include="INameQuery.cs" />
-    <Compile Include="IPriceQuery.cs" />
-    <Compile Include="ISummaryQuery.cs" />
-    <Compile Include="IDescribed.cs" />
-    <Compile Include="IIdentified.cs" />
-    <Compile Include="IPriced.cs" />
-    <Compile Include="IInventoried.cs" />
-    <Compile Include="INamed.cs" />
-    <Compile Include="IProduct.cs" />
-    <Compile Include="IProductQuery.cs" />
-    <Compile Include="ISummarized.cs" />
+    <Compile Include="Entity\ICategory.cs" />
+    <Compile Include="Entity\ICategoryEntry.cs" />
+    <Compile Include="Aspect\IDescribed.cs" />
+    <Compile Include="Aspect\IUrled.cs" />
+    <Compile Include="Aspect\IIdentified.cs" />
+    <Compile Include="Aspect\IPriced.cs" />
+    <Compile Include="Aspect\IInventoried.cs" />
+    <Compile Include="Aspect\INamed.cs" />
+    <Compile Include="Entity\IProduct.cs" />
+    <Compile Include="Aspect\ISummarized.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Contract.Vortx
+namespace Contract.Vortx.Aspect
 {
-	public interface ISummarized
+	public interface INamed
 	{
-		string Summary { get; }
+		string Name { get; }
 	}
 }

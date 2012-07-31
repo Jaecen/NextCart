@@ -9,9 +9,6 @@ using System.Web.Routing;
 
 namespace NextCart.Front.Api
 {
-	// Note: For instructions on enabling IIS6 or IIS7 classic mode, 
-	// visit http://go.microsoft.com/?LinkId=9394801
-
 	public class WebApiApplication : System.Web.HttpApplication
 	{
 		public static void RegisterGlobalFilters(GlobalFilterCollection filters)
@@ -25,14 +22,8 @@ namespace NextCart.Front.Api
 
 			routes.MapHttpRoute(
 				name: "DefaultApi",
-				routeTemplate: "api/{controller}/{id}",
+				routeTemplate: "{controller}/{id}",
 				defaults: new { id = RouteParameter.Optional }
-			);
-
-			routes.MapRoute(
-				name: "Default",
-				url: "{controller}/{action}/{id}",
-				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
 			);
 		}
 

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Contract.Vortx
+namespace Contract.Vortx.Aspect
 {
 	public interface IIdentified
 	{
-		Guid Id { get; }
+		string Id { get; }
 	}
 }
