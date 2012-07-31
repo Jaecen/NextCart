@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="https://www.doba.com/soap/20110301" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="https://www.doba.com/soap/20110301" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="https://www.doba.com/soap/20110301">
+      <xsd:complexType name="ApiRetailerAddToListRequest">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="allow_temporary" type="xsd:boolean" />
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="default" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="item_ids" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_ids" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="product_ids" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="profile_id" type="xsd:int" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="search_criteria" type="tns:ApiSearchCatalogRequest" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="send_callback" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerAuthenticationInfo">
+        <xsd:all>
+          <xsd:element name="password" type="xsd:string" />
+          <xsd:element name="username" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="intArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="xsd:int[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSearchCatalogRequest">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="avg_qty_in_stock_max" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="avg_qty_in_stock_min" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="avg_ship_time_max" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="avg_ship_time_min" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="display_count" type="xsd:int" />
+          <xsd:element name="display_start" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="filter" type="tns:ApiSearchFilterRequestArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="hide_descendents" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="no_drop_ship_fees" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="price_range_max" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="price_range_min" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="profile_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="qty_range_min" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="rollup_products" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="saved_search_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="search_term" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="sort_column" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="sort_direction" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="updated_within_last_days" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="user_folder_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="virtual_warehouse" type="xsd:boolean" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSearchFilterRequestArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiSearchFilterRequest[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSearchFilterRequest">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="ids" type="tns:stringArray" />
+          <xsd:element name="name" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="stringArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="xsd:string[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiAddToListResponse">
+        <xsd:all>
+          <xsd:element name="list_id" type="xsd:string" />
+          <xsd:element name="list_name" type="xsd:string" />
+          <xsd:element name="num_added" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerDeleteListRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element name="list_ids" type="tns:intArray" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerEditListRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="default" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="item_ids" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="item_ids_to_remove" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_ids" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="profile_id" type="xsd:int" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="send_callback" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiEditListResponse">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="num_added" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="num_removed" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerGetFullSearchFacetRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element name="facet" type="xsd:string" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+          <xsd:element name="search" type="tns:ApiSearchCatalogRequest" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiFacetInfo">
+        <xsd:all>
+          <xsd:element name="display_name" type="xsd:string" />
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="values" type="tns:ApiFacetValuesInfoArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiFacetValuesInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiFacetValuesInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiFacetValuesInfo">
+        <xsd:all>
+          <xsd:element name="count" type="xsd:int" />
+          <xsd:element name="displayValue" type="xsd:string" />
+          <xsd:element name="id" type="xsd:string" />
+          <xsd:element name="selected" type="xsd:boolean" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerGetListItemsRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="changes_only" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="limit" type="xsd:int" />
+          <xsd:element name="list_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="page" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="profile_id" type="xsd:int" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="sort" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="sort_dir" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiGetListItemsResponse">
+        <xsd:all>
+          <xsd:element name="items" type="tns:ApiItemDetailArray" />
+          <xsd:element name="list_id" type="xsd:int" />
+          <xsd:element name="page" type="xsd:int" />
+          <xsd:element name="total" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemDetailArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiItemDetail[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemDetail">
+        <xsd:all>
+          <xsd:element name="additional_details" type="xsd:string" />
+          <xsd:element name="attributes" type="tns:ApiItemAttributeInfoArray" />
+          <xsd:element name="brand" type="xsd:string" />
+          <xsd:element name="categories" type="tns:ApiNavCategoryInfoArray" />
+          <xsd:element name="condition" type="xsd:string" />
+          <xsd:element name="custom_price" type="xsd:float" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="freight" type="xsd:boolean" />
+          <xsd:element name="images" type="tns:ApiImageInfoArray" />
+          <xsd:element name="item_id" type="xsd:int" />
+          <xsd:element name="item_name" type="xsd:string" />
+          <xsd:element name="last_update" type="xsd:string" />
+          <xsd:element name="map" type="xsd:float" />
+          <xsd:element name="msrp" type="xsd:float" />
+          <xsd:element name="prepay_price" type="xsd:float" />
+          <xsd:element name="price" type="xsd:float" />
+          <xsd:element name="product_group" type="xsd:string" />
+          <xsd:element name="product_id" type="xsd:int" />
+          <xsd:element name="product_sku" type="xsd:string" />
+          <xsd:element name="product_title" type="xsd:string" />
+          <xsd:element name="qty_avail" type="xsd:int" />
+          <xsd:element name="ship_cost" type="xsd:float" />
+          <xsd:element name="ship_height" type="xsd:int" />
+          <xsd:element name="ship_length" type="xsd:int" />
+          <xsd:element name="ship_weight" type="xsd:float" />
+          <xsd:element name="ship_width" type="xsd:int" />
+          <xsd:element name="sku" type="xsd:string" />
+          <xsd:element name="stock" type="xsd:string" />
+          <xsd:element name="supplier_alerts" type="xsd:string" />
+          <xsd:element name="supplier_drop_fee" type="xsd:string" />
+          <xsd:element name="supplier_id" type="xsd:int" />
+          <xsd:element name="supplier_name" type="xsd:string" />
+          <xsd:element name="supplier_notes" type="xsd:string" />
+          <xsd:element name="supplier_processing" type="xsd:string" />
+          <xsd:element name="upc" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemAttributeInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiItemAttributeInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemAttributeInfo">
+        <xsd:all>
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="value" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiNavCategoryInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiNavCategoryInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiNavCategoryInfo">
+        <xsd:all>
+          <xsd:element name="id" type="xsd:int" />
+          <xsd:element name="name" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiImageInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiImageInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiImageInfo">
+        <xsd:all>
+          <xsd:element name="default" type="xsd:boolean" />
+          <xsd:element name="image_height" type="xsd:int" />
+          <xsd:element name="image_width" type="xsd:int" />
+          <xsd:element name="thumb_url" type="xsd:string" />
+          <xsd:element name="url" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerGetListNotificationItemsRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="limit" type="xsd:int" />
+          <xsd:element name="list_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="page" type="xsd:int" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiGetListNotificationItemsResponse">
+        <xsd:all>
+          <xsd:element name="criteria" type="tns:ApiNotificationCriteriaInfo" />
+          <xsd:element name="limit" type="xsd:int" />
+          <xsd:element name="list_name" type="xsd:string" />
+          <xsd:element name="page" type="xsd:int" />
+          <xsd:element name="products" type="tns:ApiListItemInfoArray" />
+          <xsd:element name="total" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiNotificationCriteriaInfo">
+        <xsd:all>
+          <xsd:element name="quantity" type="xsd:int" />
+          <xsd:element name="status" type="tns:stringArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiListItemInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiListItemInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiListItemInfo">
+        <xsd:all>
+          <xsd:element name="brand" type="xsd:string" />
+          <xsd:element name="date_added" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="drop_ship_fee" type="xsd:float" />
+          <xsd:element name="flags" type="tns:ApiFlagInfoArray" />
+          <xsd:element name="image_height" type="xsd:string" />
+          <xsd:element name="image_url" type="xsd:string" />
+          <xsd:element name="image_width" type="xsd:string" />
+          <xsd:element name="in_stock" type="xsd:int" />
+          <xsd:element name="in_warehouse" type="xsd:boolean" />
+          <xsd:element name="item_id" type="xsd:int" />
+          <xsd:element name="item_sku" type="xsd:string" />
+          <xsd:element name="last_update" type="xsd:string" />
+          <xsd:element name="list_id" type="xsd:int" />
+          <xsd:element name="list_name" type="xsd:string" />
+          <xsd:element name="msrp" type="xsd:float" />
+          <xsd:element name="original_price" type="xsd:float" />
+          <xsd:element name="prepay_price" type="xsd:float" />
+          <xsd:element name="price" type="xsd:float" />
+          <xsd:element name="product_group" type="xsd:string" />
+          <xsd:element name="product_id" type="xsd:int" />
+          <xsd:element name="product_sku" type="xsd:string" />
+          <xsd:element name="quantity_avail" type="xsd:int" />
+          <xsd:element name="stats" type="tns:ApiProductStatsInfo" />
+          <xsd:element name="supplier_name" type="xsd:string" />
+          <xsd:element name="thumb_height" type="xsd:string" />
+          <xsd:element name="thumb_url" type="xsd:string" />
+          <xsd:element name="thumb_width" type="xsd:string" />
+          <xsd:element name="title" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiFlagInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiFlagInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiFlagInfo">
+        <xsd:all>
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="values" type="tns:stringArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiProductStatsInfo">
+        <xsd:all>
+          <xsd:element name="item_count" type="xsd:int" />
+          <xsd:element name="item_count_in_specified_list" type="xsd:int" />
+          <xsd:element name="item_count_in_warehouse" type="xsd:int" />
+          <xsd:element name="max_cost" type="xsd:float" />
+          <xsd:element name="max_qty" type="xsd:int" />
+          <xsd:element name="min_cost" type="xsd:float" />
+          <xsd:element name="min_qty" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerGetListsForItemRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="item_id" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="product_id" type="tns:intArray" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemListInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiItemListInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemListInfo">
+        <xsd:all>
+          <xsd:element name="id" type="xsd:int" />
+          <xsd:element name="lists" type="tns:ApiBaseListInfoArray" />
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="type" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiBaseListInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiBaseListInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiBaseListInfo">
+        <xsd:all>
+          <xsd:element name="id" type="xsd:int" />
+          <xsd:element name="name" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerGetListsSummaryRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiListSummaryArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiListSummary[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiListSummary">
+        <xsd:all>
+          <xsd:element name="default" type="xsd:boolean" />
+          <xsd:element name="id" type="xsd:int" />
+          <xsd:element name="item_count" type="xsd:int" />
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="send_callback" type="xsd:boolean" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerProductDetailRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="folders" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="items" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="limit" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_ids" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="page" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="products" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="profile_id" type="xsd:int" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="ship_postal" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="specify_in_list" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="watchlists" type="tns:intArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiProductDetailResponse">
+        <xsd:all>
+          <xsd:element name="page" type="xsd:int" />
+          <xsd:element name="products" type="tns:ApiProductDetailInfoArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiProductDetailInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiProductDetailInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiProductDetailInfo">
+        <xsd:all>
+          <xsd:element name="additional_details" type="xsd:string" />
+          <xsd:element name="brand" type="xsd:string" />
+          <xsd:element name="categories" type="tns:ApiNavCategoryInfoArray" />
+          <xsd:element name="condition" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="flags" type="tns:ApiFlagInfoArray" />
+          <xsd:element name="freight" type="xsd:boolean" />
+          <xsd:element name="images" type="tns:ApiImageInfoArray" />
+          <xsd:element name="items" type="tns:ApiItemDetailInfoArray" />
+          <xsd:element name="manufacturer" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="messages" type="tns:stringArray" />
+          <xsd:element name="productStats" type="tns:ApiProductStatsInfo" />
+          <xsd:element name="product_group" type="xsd:string" />
+          <xsd:element name="product_id" type="xsd:int" />
+          <xsd:element name="product_sku" type="xsd:string" />
+          <xsd:element name="ship_cost" type="xsd:float" />
+          <xsd:element name="ship_height" type="xsd:int" />
+          <xsd:element name="ship_length" type="xsd:int" />
+          <xsd:element name="ship_weight" type="xsd:float" />
+          <xsd:element name="ship_width" type="xsd:int" />
+          <xsd:element name="status" type="xsd:string" />
+          <xsd:element name="supplier" type="tns:ApiSupplierShortInfo" />
+          <xsd:element name="title" type="xsd:string" />
+          <xsd:element name="warranty" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemDetailInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiItemDetailInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemDetailInfo">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="attributes" type="tns:ApiItemAttributeInfoArray" />
+          <xsd:element name="custom_price" type="xsd:float" />
+          <xsd:element name="est_avail" type="xsd:string" />
+          <xsd:element name="in_specified_list" type="xsd:boolean" />
+          <xsd:element name="in_warehouse" type="xsd:boolean" />
+          <xsd:element name="item_dim1" type="xsd:float" />
+          <xsd:element name="item_dim2" type="xsd:float" />
+          <xsd:element name="item_dim3" type="xsd:float" />
+          <xsd:element name="item_id" type="xsd:int" />
+          <xsd:element name="item_sku" type="xsd:string" />
+          <xsd:element name="item_weight" type="xsd:float" />
+          <xsd:element name="last_update" type="xsd:string" />
+          <xsd:element name="map" type="xsd:float" />
+          <xsd:element name="mpn" type="xsd:string" />
+          <xsd:element name="msrp" type="xsd:float" />
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="original_price" type="xsd:float" />
+          <xsd:element name="prepay_price" type="xsd:float" />
+          <xsd:element name="price" type="xsd:float" />
+          <xsd:element name="qty_avail" type="xsd:int" />
+          <xsd:element name="stock" type="xsd:string" />
+          <xsd:element name="supplier_id" type="xsd:int" />
+          <xsd:element name="upc" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSupplierShortInfo">
+        <xsd:all>
+          <xsd:element name="alerts" type="xsd:string" />
+          <xsd:element name="allows_custom_branding" type="xsd:boolean" />
+          <xsd:element name="allows_direct_relationships" type="xsd:boolean" />
+          <xsd:element name="avg_item_lifespan" type="xsd:string" />
+          <xsd:element name="avg_processing_time" type="xsd:string" />
+          <xsd:element name="avg_qty_in_stock" type="xsd:int" />
+          <xsd:element name="avg_ship_time" type="xsd:string" />
+          <xsd:element name="classification" type="xsd:string" />
+          <xsd:element name="date_active" type="xsd:string" />
+          <xsd:element name="drop_ship_fee" type="xsd:float" />
+          <xsd:element name="fulfillment_percentage" type="xsd:string" />
+          <xsd:element name="id" type="xsd:int" />
+          <xsd:element name="inventory_update_frequency" type="xsd:string" />
+          <xsd:element name="item_count" type="xsd:int" />
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="notes" type="xsd:string" />
+          <xsd:element name="num_in_stock" type="xsd:int" />
+          <xsd:element name="num_out_of_stock" type="xsd:int" />
+          <xsd:element name="product_alerts" type="xsd:string" />
+          <xsd:element name="rma_percentage" type="xsd:string" />
+          <xsd:element name="ship_price_strategy_class" type="xsd:string" />
+          <xsd:element name="shipping_carriers" type="xsd:string" />
+          <xsd:element name="summary" type="xsd:string" />
+          <xsd:element name="visibility_group" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerGetProductExportsRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="detailed_info" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="formats" type="tns:stringArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_ids" type="tns:intArray" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="url_tags" type="tns:stringArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiProductExportInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiProductExportInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiProductExportInfo">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="changes_since_secs" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="changes_since_time" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="pickup_url" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="profile_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="source_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="source_type" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="static_url" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="transform" type="tns:ApiStoredExportTransformInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="url_tag" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiStoredExportTransformInfo">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="commands" type="tns:ApiExportTransformCommandInfoArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="content_type" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="format" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="format_params" type="tns:ApiParamInfoArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="is_system" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="transform_id" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiExportTransformCommandInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiExportTransformCommandInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiExportTransformCommandInfo">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="args" type="tns:stringArray" />
+          <xsd:element name="function" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiParamInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiParamInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiParamInfo">
+        <xsd:all>
+          <xsd:element name="param" type="xsd:string" />
+          <xsd:element name="value" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerProductInventoryRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="items" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="limit" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_ids" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="page" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="products" type="tns:intArray" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="watchlists" type="tns:intArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiProductInventoryResponse">
+        <xsd:all>
+          <xsd:element name="page" type="xsd:int" />
+          <xsd:element name="products" type="tns:ApiProductInventoryInfoArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiProductInventoryInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiProductInventoryInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiProductInventoryInfo">
+        <xsd:all>
+          <xsd:element name="item_id" type="xsd:int" />
+          <xsd:element name="map" type="xsd:float" />
+          <xsd:element name="msrp" type="xsd:float" />
+          <xsd:element name="prepay_price" type="xsd:float" />
+          <xsd:element name="price" type="xsd:float" />
+          <xsd:element name="product_id" type="xsd:int" />
+          <xsd:element name="qty_avail" type="xsd:int" />
+          <xsd:element name="stock" type="xsd:string" />
+          <xsd:element name="street_price" type="xsd:float" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerGetRetailerLimitsRequest">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="access_product_id" type="xsd:int" />
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiGetRetailerLimitsResponse">
+        <xsd:all>
+          <xsd:element name="access_product_id" type="xsd:int" />
+          <xsd:element name="activated_product_limit" type="xsd:int" />
+          <xsd:element name="activated_product_total" type="xsd:int" />
+          <xsd:element name="list_limit" type="xsd:int" />
+          <xsd:element name="remaining" type="xsd:int" />
+          <xsd:element name="search_limit" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerGetSpecialsRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="limit" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="offset" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="randomize" type="xsd:boolean" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="supplier_id" type="tns:intArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="type" type="tns:stringArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiGetSpecialsResponse">
+        <xsd:all>
+          <xsd:element name="results" type="tns:ApiItemDetailArray" />
+          <xsd:element name="total" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerSupplierRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="supplier_ids" type="tns:intArray" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSupplierResponseArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiSupplierResponse[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSupplierResponse">
+        <xsd:all>
+          <xsd:element name="categories" type="tns:ApiNavCategoryInfoArray" />
+          <xsd:element name="group" type="xsd:string" />
+          <xsd:element name="id" type="xsd:int" />
+          <xsd:element name="info" type="tns:ApiSupplierInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="inventory_stats" type="tns:ApiInventoryStatsInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="is_active" type="xsd:boolean" />
+          <xsd:element name="is_pro" type="xsd:boolean" />
+          <xsd:element name="name" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSupplierInfo">
+        <xsd:all>
+          <xsd:element name="accept_backorders" type="xsd:boolean" />
+          <xsd:element name="alerts" type="xsd:string" />
+          <xsd:element name="allows_custom_branding" type="xsd:boolean" />
+          <xsd:element name="allows_direct_relationships" type="xsd:boolean" />
+          <xsd:element name="avg_item_lifespan" type="xsd:string" />
+          <xsd:element name="avg_processing_time" type="xsd:string" />
+          <xsd:element name="avg_product_discount" type="xsd:string" />
+          <xsd:element name="avg_qty_in_stock" type="xsd:int" />
+          <xsd:element name="avg_ship_time" type="xsd:string" />
+          <xsd:element name="classification" type="xsd:string" />
+          <xsd:element name="damage_policy" type="xsd:string" />
+          <xsd:element name="date_active" type="xsd:string" />
+          <xsd:element name="days_allowed_to_return" type="xsd:int" />
+          <xsd:element name="days_to_receive_refund" type="xsd:int" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="drop_ship_fee" type="xsd:float" />
+          <xsd:element name="fulfillment_percentage" type="xsd:string" />
+          <xsd:element name="inventory_info" type="xsd:string" />
+          <xsd:element name="inventory_update_frequency" type="xsd:string" />
+          <xsd:element name="item_count" type="xsd:int" />
+          <xsd:element name="meta_description" type="xsd:string" />
+          <xsd:element name="meta_keywords" type="xsd:string" />
+          <xsd:element name="notes" type="xsd:string" />
+          <xsd:element name="num_in_stock" type="xsd:int" />
+          <xsd:element name="num_out_of_stock" type="xsd:int" />
+          <xsd:element name="product_alerts" type="xsd:string" />
+          <xsd:element name="return_policy" type="xsd:string" />
+          <xsd:element name="rma_instructions" type="xsd:string" />
+          <xsd:element name="rma_percentage" type="xsd:string" />
+          <xsd:element name="ship_price_strategy_class" type="xsd:string" />
+          <xsd:element name="shipping_carriers" type="xsd:string" />
+          <xsd:element name="shortage_policy" type="xsd:string" />
+          <xsd:element name="special_conditions" type="xsd:string" />
+          <xsd:element name="summary" type="xsd:string" />
+          <xsd:element name="visibility_group" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiInventoryStatsInfo">
+        <xsd:all>
+          <xsd:element name="discontinued" type="xsd:int" />
+          <xsd:element name="in_stock" type="xsd:int" />
+          <xsd:element name="out_of_stock" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerModifyListsRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element name="lists" type="tns:ApiListAttributesArray" />
+          <xsd:element name="retailer_id" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiListAttributesArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiListAttributes[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiListAttributes">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="default" type="xsd:int" />
+          <xsd:element name="list_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="list_name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="profile_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="send_callback" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiModifyListsResponseArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiModifyListsResponse[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiModifyListsResponse">
+        <xsd:all>
+          <xsd:element name="list_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="message" type="xsd:string" />
+          <xsd:element name="result" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiRetailerSearchCatalogRequest">
+        <xsd:all>
+          <xsd:element name="authentication" type="tns:ApiRetailerAuthenticationInfo" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="display_count" type="xsd:int" />
+          <xsd:element name="display_start" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="filter" type="tns:ApiSearchFilterRequestArray" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="hide_descendents" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="price_range_max" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="price_range_min" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="profile_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="qty_range_min" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="retailer_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="rollup_products" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="saved_search_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="search_term" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="sort_column" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="sort_direction" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="updated_within_last_days" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="user_folder_id" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="virtual_warehouse" type="xsd:boolean" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSearchCatalogResponse">
+        <xsd:all>
+          <xsd:element name="display_count" type="xsd:int" />
+          <xsd:element name="display_start" type="xsd:int" />
+          <xsd:element name="exact_match" type="tns:ApiItemShortInfoArray" />
+          <xsd:element name="facets" type="tns:ApiFacetInfoArray" />
+          <xsd:element name="has_next_page" type="xsd:boolean" />
+          <xsd:element name="parent_categories" type="tns:ApiNavCategoryInfoArray" />
+          <xsd:element name="products" type="tns:ApiItemShortInfoArray" />
+          <xsd:element name="saved_searches" type="tns:ApiSavedSearchInfoArray" />
+          <xsd:element name="search_term" type="xsd:string" />
+          <xsd:element name="specials" type="tns:ApiItemShortInfoArray" />
+          <xsd:element name="suggestion" type="xsd:string" />
+          <xsd:element name="top_sellers" type="tns:ApiItemShortInfoArray" />
+          <xsd:element name="total_search_results" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemShortInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiItemShortInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiItemShortInfo">
+        <xsd:all>
+          <xsd:element name="brand" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="drop_ship_fee" type="xsd:float" />
+          <xsd:element name="flags" type="tns:ApiFlagInfoArray" />
+          <xsd:element name="image_height" type="xsd:string" />
+          <xsd:element name="image_url" type="xsd:string" />
+          <xsd:element name="image_width" type="xsd:string" />
+          <xsd:element name="in_stock" type="xsd:int" />
+          <xsd:element name="in_warehouse" type="xsd:boolean" />
+          <xsd:element name="item_id" type="xsd:int" />
+          <xsd:element name="item_sku" type="xsd:string" />
+          <xsd:element name="last_update" type="xsd:string" />
+          <xsd:element name="msrp" type="xsd:float" />
+          <xsd:element name="original_price" type="xsd:float" />
+          <xsd:element name="prepay_price" type="xsd:float" />
+          <xsd:element name="price" type="xsd:float" />
+          <xsd:element name="product_group" type="xsd:string" />
+          <xsd:element name="product_id" type="xsd:int" />
+          <xsd:element name="product_sku" type="xsd:string" />
+          <xsd:element name="quantity_avail" type="xsd:int" />
+          <xsd:element name="stats" type="tns:ApiProductStatsInfo" />
+          <xsd:element name="supplier_name" type="xsd:string" />
+          <xsd:element name="thumb_height" type="xsd:string" />
+          <xsd:element name="thumb_url" type="xsd:string" />
+          <xsd:element name="thumb_width" type="xsd:string" />
+          <xsd:element name="title" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ApiFacetInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiFacetInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSavedSearchInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ApiSavedSearchInfo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ApiSavedSearchInfo">
+        <xsd:all>
+          <xsd:element name="criteria" type="xsd:string" />
+          <xsd:element name="date_created" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="friendly_criteria" type="xsd:string" />
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="results_per_page" type="xsd:int" />
+          <xsd:element name="saved_search_id" type="xsd:int" />
+          <xsd:element name="sort_order" type="xsd:int" />
+          <xsd:element name="view_option" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="addToListRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerAddToListRequest" />
+  </wsdl:message>
+  <wsdl:message name="addToListResponse">
+    <wsdl:part name="addToListReturn" type="tns:ApiAddToListResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteListRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerDeleteListRequest" />
+  </wsdl:message>
+  <wsdl:message name="deleteListResponse">
+    <wsdl:part name="deleteListReturn" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="editListRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerEditListRequest" />
+  </wsdl:message>
+  <wsdl:message name="editListResponse">
+    <wsdl:part name="editListReturn" type="tns:ApiEditListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFullSearchFacetRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerGetFullSearchFacetRequest" />
+  </wsdl:message>
+  <wsdl:message name="getFullSearchFacetResponse">
+    <wsdl:part name="getFullSearchFacetReturn" type="tns:ApiFacetInfo" />
+  </wsdl:message>
+  <wsdl:message name="getListItemsRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerGetListItemsRequest" />
+  </wsdl:message>
+  <wsdl:message name="getListItemsResponse">
+    <wsdl:part name="getListItemsReturn" type="tns:ApiGetListItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListNotificationItemsRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerGetListNotificationItemsRequest" />
+  </wsdl:message>
+  <wsdl:message name="getListNotificationItemsResponse">
+    <wsdl:part name="getListNotificationItemsReturn" type="tns:ApiGetListNotificationItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListsForItemRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerGetListsForItemRequest" />
+  </wsdl:message>
+  <wsdl:message name="getListsForItemResponse">
+    <wsdl:part name="getListsForItemReturn" type="tns:ApiItemListInfoArray" />
+  </wsdl:message>
+  <wsdl:message name="getListsSummaryRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerGetListsSummaryRequest" />
+  </wsdl:message>
+  <wsdl:message name="getListsSummaryResponse">
+    <wsdl:part name="getListsSummaryReturn" type="tns:ApiListSummaryArray" />
+  </wsdl:message>
+  <wsdl:message name="getProductDetailRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerProductDetailRequest" />
+  </wsdl:message>
+  <wsdl:message name="getProductDetailResponse">
+    <wsdl:part name="getProductDetailReturn" type="tns:ApiProductDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="getProductExportsRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerGetProductExportsRequest" />
+  </wsdl:message>
+  <wsdl:message name="getProductExportsResponse">
+    <wsdl:part name="getProductExportsReturn" type="tns:ApiProductExportInfoArray" />
+  </wsdl:message>
+  <wsdl:message name="getProductInventoryRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerProductInventoryRequest" />
+  </wsdl:message>
+  <wsdl:message name="getProductInventoryResponse">
+    <wsdl:part name="getProductInventoryReturn" type="tns:ApiProductInventoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="getRetailerLimitsRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerGetRetailerLimitsRequest" />
+  </wsdl:message>
+  <wsdl:message name="getRetailerLimitsResponse">
+    <wsdl:part name="getRetailerLimitsReturn" type="tns:ApiGetRetailerLimitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSpecialsRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerGetSpecialsRequest" />
+  </wsdl:message>
+  <wsdl:message name="getSpecialsResponse">
+    <wsdl:part name="getSpecialsReturn" type="tns:ApiGetSpecialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSuppliersRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerSupplierRequest" />
+  </wsdl:message>
+  <wsdl:message name="getSuppliersResponse">
+    <wsdl:part name="getSuppliersReturn" type="tns:ApiSupplierResponseArray" />
+  </wsdl:message>
+  <wsdl:message name="modifyListsRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerModifyListsRequest" />
+  </wsdl:message>
+  <wsdl:message name="modifyListsResponse">
+    <wsdl:part name="modifyListsReturn" type="tns:ApiModifyListsResponseArray" />
+  </wsdl:message>
+  <wsdl:message name="searchCatalogRequest">
+    <wsdl:part name="objRequest" type="tns:ApiRetailerSearchCatalogRequest" />
+  </wsdl:message>
+  <wsdl:message name="searchCatalogResponse">
+    <wsdl:part name="searchCatalogReturn" type="tns:ApiSearchCatalogResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ApiRetailerSearchPortType">
+    <wsdl:operation name="addToList">
+      <wsdl:input message="tns:addToListRequest" />
+      <wsdl:output message="tns:addToListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteList">
+      <wsdl:input message="tns:deleteListRequest" />
+      <wsdl:output message="tns:deleteListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="editList">
+      <wsdl:input message="tns:editListRequest" />
+      <wsdl:output message="tns:editListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getFullSearchFacet">
+      <wsdl:input message="tns:getFullSearchFacetRequest" />
+      <wsdl:output message="tns:getFullSearchFacetResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getListItems">
+      <wsdl:input message="tns:getListItemsRequest" />
+      <wsdl:output message="tns:getListItemsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getListNotificationItems">
+      <wsdl:input message="tns:getListNotificationItemsRequest" />
+      <wsdl:output message="tns:getListNotificationItemsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getListsForItem">
+      <wsdl:input message="tns:getListsForItemRequest" />
+      <wsdl:output message="tns:getListsForItemResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getListsSummary">
+      <wsdl:input message="tns:getListsSummaryRequest" />
+      <wsdl:output message="tns:getListsSummaryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getProductDetail">
+      <wsdl:input message="tns:getProductDetailRequest" />
+      <wsdl:output message="tns:getProductDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getProductExports">
+      <wsdl:input message="tns:getProductExportsRequest" />
+      <wsdl:output message="tns:getProductExportsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getProductInventory">
+      <wsdl:input message="tns:getProductInventoryRequest" />
+      <wsdl:output message="tns:getProductInventoryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getRetailerLimits">
+      <wsdl:input message="tns:getRetailerLimitsRequest" />
+      <wsdl:output message="tns:getRetailerLimitsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getSpecials">
+      <wsdl:input message="tns:getSpecialsRequest" />
+      <wsdl:output message="tns:getSpecialsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getSuppliers">
+      <wsdl:input message="tns:getSuppliersRequest" />
+      <wsdl:output message="tns:getSuppliersResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="modifyLists">
+      <wsdl:input message="tns:modifyListsRequest" />
+      <wsdl:output message="tns:modifyListsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="searchCatalog">
+      <wsdl:input message="tns:searchCatalogRequest" />
+      <wsdl:output message="tns:searchCatalogResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ApiRetailerSearchBinding" type="tns:ApiRetailerSearchPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="addToList">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteList">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editList">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFullSearchFacet">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListItems">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListNotificationItems">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListsForItem">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListsSummary">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProductDetail">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProductExports">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProductInventory">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRetailerLimits">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSpecials">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSuppliers">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyLists">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchCatalog">
+      <soap:operation soapAction="" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ApiRetailerSearch">
+    <wsdl:port name="ApiRetailerSearchPort" binding="tns:ApiRetailerSearchBinding">
+      <soap:address location="https://www.sandbox.doba.com/wshelper/20110301/service.php?class=ApiRetailerSearch" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
