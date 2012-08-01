@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Contract.Vortx.Entity;
 
-namespace NextCart.Back.Products.Doba
+namespace NextCart.Back.Doba
 {
-	class Product : IProduct
+	class Product : Contract.Product.Doba.IProduct
 	{
 		public string Sku 
 		{ get; set; }

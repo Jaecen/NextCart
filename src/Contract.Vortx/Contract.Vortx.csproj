@@ -40,15 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entity\ICategory.cs" />
-    <Compile Include="Entity\ICategoryEntry.cs" />
     <Compile Include="Aspect\IDescribed.cs" />
     <Compile Include="Aspect\IUrled.cs" />
     <Compile Include="Aspect\IIdentified.cs" />
     <Compile Include="Aspect\IPriced.cs" />
     <Compile Include="Aspect\IInventoried.cs" />
     <Compile Include="Aspect\INamed.cs" />
-    <Compile Include="Entity\IProduct.cs" />
     <Compile Include="Aspect\ISummarized.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NextCart.Back.Products.Doba.DobaApi {
+namespace NextCart.Back.Doba.DobaApi {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -40,7 +40,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.addToListResponse addToList(NextCart.Back.Products.Doba.DobaApi.addToListRequest request);
+        NextCart.Back.Doba.DobaApi.addToListResponse addToList(NextCart.Back.Doba.DobaApi.addToListRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message deleteListRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -67,7 +67,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.deleteListResponse deleteList(NextCart.Back.Products.Doba.DobaApi.deleteListRequest request);
+        NextCart.Back.Doba.DobaApi.deleteListResponse deleteList(NextCart.Back.Doba.DobaApi.deleteListRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message editListRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -94,7 +94,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.editListResponse editList(NextCart.Back.Products.Doba.DobaApi.editListRequest request);
+        NextCart.Back.Doba.DobaApi.editListResponse editList(NextCart.Back.Doba.DobaApi.editListRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getFullSearchFacetRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -121,7 +121,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getFullSearchFacetResponse getFullSearchFacet(NextCart.Back.Products.Doba.DobaApi.getFullSearchFacetRequest request);
+        NextCart.Back.Doba.DobaApi.getFullSearchFacetResponse getFullSearchFacet(NextCart.Back.Doba.DobaApi.getFullSearchFacetRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getListItemsRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -148,7 +148,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getListItemsResponse getListItems(NextCart.Back.Products.Doba.DobaApi.getListItemsRequest request);
+        NextCart.Back.Doba.DobaApi.getListItemsResponse getListItems(NextCart.Back.Doba.DobaApi.getListItemsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getListNotificationItemsRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -175,7 +175,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getListNotificationItemsResponse getListNotificationItems(NextCart.Back.Products.Doba.DobaApi.getListNotificationItemsRequest request);
+        NextCart.Back.Doba.DobaApi.getListNotificationItemsResponse getListNotificationItems(NextCart.Back.Doba.DobaApi.getListNotificationItemsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getListsForItemRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -202,7 +202,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getListsForItemResponse getListsForItem(NextCart.Back.Products.Doba.DobaApi.getListsForItemRequest request);
+        NextCart.Back.Doba.DobaApi.getListsForItemResponse getListsForItem(NextCart.Back.Doba.DobaApi.getListsForItemRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getListsSummaryRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -229,7 +229,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getListsSummaryResponse getListsSummary(NextCart.Back.Products.Doba.DobaApi.getListsSummaryRequest request);
+        NextCart.Back.Doba.DobaApi.getListsSummaryResponse getListsSummary(NextCart.Back.Doba.DobaApi.getListsSummaryRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getProductDetailRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -256,7 +256,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getProductDetailResponse getProductDetail(NextCart.Back.Products.Doba.DobaApi.getProductDetailRequest request);
+        NextCart.Back.Doba.DobaApi.getProductDetailResponse getProductDetail(NextCart.Back.Doba.DobaApi.getProductDetailRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getProductExportsRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -283,7 +283,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getProductExportsResponse getProductExports(NextCart.Back.Products.Doba.DobaApi.getProductExportsRequest request);
+        NextCart.Back.Doba.DobaApi.getProductExportsResponse getProductExports(NextCart.Back.Doba.DobaApi.getProductExportsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getProductInventoryRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -310,7 +310,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getProductInventoryResponse getProductInventory(NextCart.Back.Products.Doba.DobaApi.getProductInventoryRequest request);
+        NextCart.Back.Doba.DobaApi.getProductInventoryResponse getProductInventory(NextCart.Back.Doba.DobaApi.getProductInventoryRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getRetailerLimitsRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -337,7 +337,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getRetailerLimitsResponse getRetailerLimits(NextCart.Back.Products.Doba.DobaApi.getRetailerLimitsRequest request);
+        NextCart.Back.Doba.DobaApi.getRetailerLimitsResponse getRetailerLimits(NextCart.Back.Doba.DobaApi.getRetailerLimitsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getSpecialsRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -364,7 +364,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getSpecialsResponse getSpecials(NextCart.Back.Products.Doba.DobaApi.getSpecialsRequest request);
+        NextCart.Back.Doba.DobaApi.getSpecialsResponse getSpecials(NextCart.Back.Doba.DobaApi.getSpecialsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message getSuppliersRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -391,7 +391,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.getSuppliersResponse getSuppliers(NextCart.Back.Products.Doba.DobaApi.getSuppliersRequest request);
+        NextCart.Back.Doba.DobaApi.getSuppliersResponse getSuppliers(NextCart.Back.Doba.DobaApi.getSuppliersRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message modifyListsRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -418,7 +418,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.modifyListsResponse modifyLists(NextCart.Back.Products.Doba.DobaApi.modifyListsRequest request);
+        NextCart.Back.Doba.DobaApi.modifyListsResponse modifyLists(NextCart.Back.Doba.DobaApi.modifyListsRequest request);
         
         // CODEGEN: Generating message contract since the wrapper namespace () of message searchCatalogRequest does not match the default value (https://www.doba.com/soap/20110301)
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
@@ -445,7 +445,7 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiItemDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiFacetValuesInfo))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ApiSearchFilterRequest))]
-        NextCart.Back.Products.Doba.DobaApi.searchCatalogResponse searchCatalog(NextCart.Back.Products.Doba.DobaApi.searchCatalogRequest request);
+        NextCart.Back.Doba.DobaApi.searchCatalogResponse searchCatalog(NextCart.Back.Doba.DobaApi.searchCatalogRequest request);
     }
     
     /// <remarks/>
@@ -8457,12 +8457,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class addToListRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerAddToListRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerAddToListRequest objRequest;
         
         public addToListRequest() {
         }
         
-        public addToListRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerAddToListRequest objRequest) {
+        public addToListRequest(NextCart.Back.Doba.DobaApi.ApiRetailerAddToListRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8474,12 +8474,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class addToListResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiAddToListResponse addToListReturn;
+        public NextCart.Back.Doba.DobaApi.ApiAddToListResponse addToListReturn;
         
         public addToListResponse() {
         }
         
-        public addToListResponse(NextCart.Back.Products.Doba.DobaApi.ApiAddToListResponse addToListReturn) {
+        public addToListResponse(NextCart.Back.Doba.DobaApi.ApiAddToListResponse addToListReturn) {
             this.addToListReturn = addToListReturn;
         }
     }
@@ -8491,12 +8491,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class deleteListRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerDeleteListRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerDeleteListRequest objRequest;
         
         public deleteListRequest() {
         }
         
-        public deleteListRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerDeleteListRequest objRequest) {
+        public deleteListRequest(NextCart.Back.Doba.DobaApi.ApiRetailerDeleteListRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8525,12 +8525,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class editListRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerEditListRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerEditListRequest objRequest;
         
         public editListRequest() {
         }
         
-        public editListRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerEditListRequest objRequest) {
+        public editListRequest(NextCart.Back.Doba.DobaApi.ApiRetailerEditListRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8542,12 +8542,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class editListResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiEditListResponse editListReturn;
+        public NextCart.Back.Doba.DobaApi.ApiEditListResponse editListReturn;
         
         public editListResponse() {
         }
         
-        public editListResponse(NextCart.Back.Products.Doba.DobaApi.ApiEditListResponse editListReturn) {
+        public editListResponse(NextCart.Back.Doba.DobaApi.ApiEditListResponse editListReturn) {
             this.editListReturn = editListReturn;
         }
     }
@@ -8559,12 +8559,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getFullSearchFacetRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetFullSearchFacetRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerGetFullSearchFacetRequest objRequest;
         
         public getFullSearchFacetRequest() {
         }
         
-        public getFullSearchFacetRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetFullSearchFacetRequest objRequest) {
+        public getFullSearchFacetRequest(NextCart.Back.Doba.DobaApi.ApiRetailerGetFullSearchFacetRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8576,12 +8576,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getFullSearchFacetResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiFacetInfo getFullSearchFacetReturn;
+        public NextCart.Back.Doba.DobaApi.ApiFacetInfo getFullSearchFacetReturn;
         
         public getFullSearchFacetResponse() {
         }
         
-        public getFullSearchFacetResponse(NextCart.Back.Products.Doba.DobaApi.ApiFacetInfo getFullSearchFacetReturn) {
+        public getFullSearchFacetResponse(NextCart.Back.Doba.DobaApi.ApiFacetInfo getFullSearchFacetReturn) {
             this.getFullSearchFacetReturn = getFullSearchFacetReturn;
         }
     }
@@ -8593,12 +8593,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getListItemsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListItemsRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerGetListItemsRequest objRequest;
         
         public getListItemsRequest() {
         }
         
-        public getListItemsRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListItemsRequest objRequest) {
+        public getListItemsRequest(NextCart.Back.Doba.DobaApi.ApiRetailerGetListItemsRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8610,12 +8610,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getListItemsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiGetListItemsResponse getListItemsReturn;
+        public NextCart.Back.Doba.DobaApi.ApiGetListItemsResponse getListItemsReturn;
         
         public getListItemsResponse() {
         }
         
-        public getListItemsResponse(NextCart.Back.Products.Doba.DobaApi.ApiGetListItemsResponse getListItemsReturn) {
+        public getListItemsResponse(NextCart.Back.Doba.DobaApi.ApiGetListItemsResponse getListItemsReturn) {
             this.getListItemsReturn = getListItemsReturn;
         }
     }
@@ -8627,12 +8627,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getListNotificationItemsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListNotificationItemsRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerGetListNotificationItemsRequest objRequest;
         
         public getListNotificationItemsRequest() {
         }
         
-        public getListNotificationItemsRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListNotificationItemsRequest objRequest) {
+        public getListNotificationItemsRequest(NextCart.Back.Doba.DobaApi.ApiRetailerGetListNotificationItemsRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8644,12 +8644,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getListNotificationItemsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiGetListNotificationItemsResponse getListNotificationItemsReturn;
+        public NextCart.Back.Doba.DobaApi.ApiGetListNotificationItemsResponse getListNotificationItemsReturn;
         
         public getListNotificationItemsResponse() {
         }
         
-        public getListNotificationItemsResponse(NextCart.Back.Products.Doba.DobaApi.ApiGetListNotificationItemsResponse getListNotificationItemsReturn) {
+        public getListNotificationItemsResponse(NextCart.Back.Doba.DobaApi.ApiGetListNotificationItemsResponse getListNotificationItemsReturn) {
             this.getListNotificationItemsReturn = getListNotificationItemsReturn;
         }
     }
@@ -8661,12 +8661,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getListsForItemRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListsForItemRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerGetListsForItemRequest objRequest;
         
         public getListsForItemRequest() {
         }
         
-        public getListsForItemRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListsForItemRequest objRequest) {
+        public getListsForItemRequest(NextCart.Back.Doba.DobaApi.ApiRetailerGetListsForItemRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8695,12 +8695,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getListsSummaryRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListsSummaryRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerGetListsSummaryRequest objRequest;
         
         public getListsSummaryRequest() {
         }
         
-        public getListsSummaryRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListsSummaryRequest objRequest) {
+        public getListsSummaryRequest(NextCart.Back.Doba.DobaApi.ApiRetailerGetListsSummaryRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8729,12 +8729,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getProductDetailRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerProductDetailRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerProductDetailRequest objRequest;
         
         public getProductDetailRequest() {
         }
         
-        public getProductDetailRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerProductDetailRequest objRequest) {
+        public getProductDetailRequest(NextCart.Back.Doba.DobaApi.ApiRetailerProductDetailRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8746,12 +8746,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getProductDetailResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiProductDetailResponse getProductDetailReturn;
+        public NextCart.Back.Doba.DobaApi.ApiProductDetailResponse getProductDetailReturn;
         
         public getProductDetailResponse() {
         }
         
-        public getProductDetailResponse(NextCart.Back.Products.Doba.DobaApi.ApiProductDetailResponse getProductDetailReturn) {
+        public getProductDetailResponse(NextCart.Back.Doba.DobaApi.ApiProductDetailResponse getProductDetailReturn) {
             this.getProductDetailReturn = getProductDetailReturn;
         }
     }
@@ -8763,12 +8763,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getProductExportsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetProductExportsRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerGetProductExportsRequest objRequest;
         
         public getProductExportsRequest() {
         }
         
-        public getProductExportsRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetProductExportsRequest objRequest) {
+        public getProductExportsRequest(NextCart.Back.Doba.DobaApi.ApiRetailerGetProductExportsRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8797,12 +8797,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getProductInventoryRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerProductInventoryRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerProductInventoryRequest objRequest;
         
         public getProductInventoryRequest() {
         }
         
-        public getProductInventoryRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerProductInventoryRequest objRequest) {
+        public getProductInventoryRequest(NextCart.Back.Doba.DobaApi.ApiRetailerProductInventoryRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8814,12 +8814,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getProductInventoryResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiProductInventoryResponse getProductInventoryReturn;
+        public NextCart.Back.Doba.DobaApi.ApiProductInventoryResponse getProductInventoryReturn;
         
         public getProductInventoryResponse() {
         }
         
-        public getProductInventoryResponse(NextCart.Back.Products.Doba.DobaApi.ApiProductInventoryResponse getProductInventoryReturn) {
+        public getProductInventoryResponse(NextCart.Back.Doba.DobaApi.ApiProductInventoryResponse getProductInventoryReturn) {
             this.getProductInventoryReturn = getProductInventoryReturn;
         }
     }
@@ -8831,12 +8831,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getRetailerLimitsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetRetailerLimitsRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerGetRetailerLimitsRequest objRequest;
         
         public getRetailerLimitsRequest() {
         }
         
-        public getRetailerLimitsRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetRetailerLimitsRequest objRequest) {
+        public getRetailerLimitsRequest(NextCart.Back.Doba.DobaApi.ApiRetailerGetRetailerLimitsRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8848,12 +8848,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getRetailerLimitsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiGetRetailerLimitsResponse getRetailerLimitsReturn;
+        public NextCart.Back.Doba.DobaApi.ApiGetRetailerLimitsResponse getRetailerLimitsReturn;
         
         public getRetailerLimitsResponse() {
         }
         
-        public getRetailerLimitsResponse(NextCart.Back.Products.Doba.DobaApi.ApiGetRetailerLimitsResponse getRetailerLimitsReturn) {
+        public getRetailerLimitsResponse(NextCart.Back.Doba.DobaApi.ApiGetRetailerLimitsResponse getRetailerLimitsReturn) {
             this.getRetailerLimitsReturn = getRetailerLimitsReturn;
         }
     }
@@ -8865,12 +8865,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getSpecialsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetSpecialsRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerGetSpecialsRequest objRequest;
         
         public getSpecialsRequest() {
         }
         
-        public getSpecialsRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetSpecialsRequest objRequest) {
+        public getSpecialsRequest(NextCart.Back.Doba.DobaApi.ApiRetailerGetSpecialsRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8882,12 +8882,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getSpecialsResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiGetSpecialsResponse getSpecialsReturn;
+        public NextCart.Back.Doba.DobaApi.ApiGetSpecialsResponse getSpecialsReturn;
         
         public getSpecialsResponse() {
         }
         
-        public getSpecialsResponse(NextCart.Back.Products.Doba.DobaApi.ApiGetSpecialsResponse getSpecialsReturn) {
+        public getSpecialsResponse(NextCart.Back.Doba.DobaApi.ApiGetSpecialsResponse getSpecialsReturn) {
             this.getSpecialsReturn = getSpecialsReturn;
         }
     }
@@ -8899,12 +8899,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class getSuppliersRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerSupplierRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerSupplierRequest objRequest;
         
         public getSuppliersRequest() {
         }
         
-        public getSuppliersRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerSupplierRequest objRequest) {
+        public getSuppliersRequest(NextCart.Back.Doba.DobaApi.ApiRetailerSupplierRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8933,12 +8933,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class modifyListsRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerModifyListsRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerModifyListsRequest objRequest;
         
         public modifyListsRequest() {
         }
         
-        public modifyListsRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerModifyListsRequest objRequest) {
+        public modifyListsRequest(NextCart.Back.Doba.DobaApi.ApiRetailerModifyListsRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8967,12 +8967,12 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class searchCatalogRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchCatalogRequest objRequest;
+        public NextCart.Back.Doba.DobaApi.ApiRetailerSearchCatalogRequest objRequest;
         
         public searchCatalogRequest() {
         }
         
-        public searchCatalogRequest(NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchCatalogRequest objRequest) {
+        public searchCatalogRequest(NextCart.Back.Doba.DobaApi.ApiRetailerSearchCatalogRequest objRequest) {
             this.objRequest = objRequest;
         }
     }
@@ -8984,23 +8984,23 @@ namespace NextCart.Back.Products.Doba.DobaApi {
     public partial class searchCatalogResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public NextCart.Back.Products.Doba.DobaApi.ApiSearchCatalogResponse searchCatalogReturn;
+        public NextCart.Back.Doba.DobaApi.ApiSearchCatalogResponse searchCatalogReturn;
         
         public searchCatalogResponse() {
         }
         
-        public searchCatalogResponse(NextCart.Back.Products.Doba.DobaApi.ApiSearchCatalogResponse searchCatalogReturn) {
+        public searchCatalogResponse(NextCart.Back.Doba.DobaApi.ApiSearchCatalogResponse searchCatalogReturn) {
             this.searchCatalogReturn = searchCatalogReturn;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ApiRetailerSearchPortTypeChannel : NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType, System.ServiceModel.IClientChannel {
+    public interface ApiRetailerSearchPortTypeChannel : NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ApiRetailerSearchPortTypeClient : System.ServiceModel.ClientBase<NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType>, NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType {
+    public partial class ApiRetailerSearchPortTypeClient : System.ServiceModel.ClientBase<NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType>, NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType {
         
         public ApiRetailerSearchPortTypeClient() {
         }
@@ -9022,194 +9022,194 @@ namespace NextCart.Back.Products.Doba.DobaApi {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.addToListResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.addToList(NextCart.Back.Products.Doba.DobaApi.addToListRequest request) {
+        NextCart.Back.Doba.DobaApi.addToListResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.addToList(NextCart.Back.Doba.DobaApi.addToListRequest request) {
             return base.Channel.addToList(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiAddToListResponse addToList(NextCart.Back.Products.Doba.DobaApi.ApiRetailerAddToListRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.addToListRequest inValue = new NextCart.Back.Products.Doba.DobaApi.addToListRequest();
+        public NextCart.Back.Doba.DobaApi.ApiAddToListResponse addToList(NextCart.Back.Doba.DobaApi.ApiRetailerAddToListRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.addToListRequest inValue = new NextCart.Back.Doba.DobaApi.addToListRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.addToListResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).addToList(inValue);
+            NextCart.Back.Doba.DobaApi.addToListResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).addToList(inValue);
             return retVal.addToListReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.deleteListResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.deleteList(NextCart.Back.Products.Doba.DobaApi.deleteListRequest request) {
+        NextCart.Back.Doba.DobaApi.deleteListResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.deleteList(NextCart.Back.Doba.DobaApi.deleteListRequest request) {
             return base.Channel.deleteList(request);
         }
         
-        public int deleteList(NextCart.Back.Products.Doba.DobaApi.ApiRetailerDeleteListRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.deleteListRequest inValue = new NextCart.Back.Products.Doba.DobaApi.deleteListRequest();
+        public int deleteList(NextCart.Back.Doba.DobaApi.ApiRetailerDeleteListRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.deleteListRequest inValue = new NextCart.Back.Doba.DobaApi.deleteListRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.deleteListResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).deleteList(inValue);
+            NextCart.Back.Doba.DobaApi.deleteListResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).deleteList(inValue);
             return retVal.deleteListReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.editListResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.editList(NextCart.Back.Products.Doba.DobaApi.editListRequest request) {
+        NextCart.Back.Doba.DobaApi.editListResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.editList(NextCart.Back.Doba.DobaApi.editListRequest request) {
             return base.Channel.editList(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiEditListResponse editList(NextCart.Back.Products.Doba.DobaApi.ApiRetailerEditListRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.editListRequest inValue = new NextCart.Back.Products.Doba.DobaApi.editListRequest();
+        public NextCart.Back.Doba.DobaApi.ApiEditListResponse editList(NextCart.Back.Doba.DobaApi.ApiRetailerEditListRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.editListRequest inValue = new NextCart.Back.Doba.DobaApi.editListRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.editListResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).editList(inValue);
+            NextCart.Back.Doba.DobaApi.editListResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).editList(inValue);
             return retVal.editListReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getFullSearchFacetResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getFullSearchFacet(NextCart.Back.Products.Doba.DobaApi.getFullSearchFacetRequest request) {
+        NextCart.Back.Doba.DobaApi.getFullSearchFacetResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getFullSearchFacet(NextCart.Back.Doba.DobaApi.getFullSearchFacetRequest request) {
             return base.Channel.getFullSearchFacet(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiFacetInfo getFullSearchFacet(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetFullSearchFacetRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getFullSearchFacetRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getFullSearchFacetRequest();
+        public NextCart.Back.Doba.DobaApi.ApiFacetInfo getFullSearchFacet(NextCart.Back.Doba.DobaApi.ApiRetailerGetFullSearchFacetRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getFullSearchFacetRequest inValue = new NextCart.Back.Doba.DobaApi.getFullSearchFacetRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getFullSearchFacetResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getFullSearchFacet(inValue);
+            NextCart.Back.Doba.DobaApi.getFullSearchFacetResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getFullSearchFacet(inValue);
             return retVal.getFullSearchFacetReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getListItemsResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getListItems(NextCart.Back.Products.Doba.DobaApi.getListItemsRequest request) {
+        NextCart.Back.Doba.DobaApi.getListItemsResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getListItems(NextCart.Back.Doba.DobaApi.getListItemsRequest request) {
             return base.Channel.getListItems(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiGetListItemsResponse getListItems(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListItemsRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getListItemsRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getListItemsRequest();
+        public NextCart.Back.Doba.DobaApi.ApiGetListItemsResponse getListItems(NextCart.Back.Doba.DobaApi.ApiRetailerGetListItemsRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getListItemsRequest inValue = new NextCart.Back.Doba.DobaApi.getListItemsRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getListItemsResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getListItems(inValue);
+            NextCart.Back.Doba.DobaApi.getListItemsResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getListItems(inValue);
             return retVal.getListItemsReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getListNotificationItemsResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getListNotificationItems(NextCart.Back.Products.Doba.DobaApi.getListNotificationItemsRequest request) {
+        NextCart.Back.Doba.DobaApi.getListNotificationItemsResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getListNotificationItems(NextCart.Back.Doba.DobaApi.getListNotificationItemsRequest request) {
             return base.Channel.getListNotificationItems(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiGetListNotificationItemsResponse getListNotificationItems(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListNotificationItemsRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getListNotificationItemsRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getListNotificationItemsRequest();
+        public NextCart.Back.Doba.DobaApi.ApiGetListNotificationItemsResponse getListNotificationItems(NextCart.Back.Doba.DobaApi.ApiRetailerGetListNotificationItemsRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getListNotificationItemsRequest inValue = new NextCart.Back.Doba.DobaApi.getListNotificationItemsRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getListNotificationItemsResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getListNotificationItems(inValue);
+            NextCart.Back.Doba.DobaApi.getListNotificationItemsResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getListNotificationItems(inValue);
             return retVal.getListNotificationItemsReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getListsForItemResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getListsForItem(NextCart.Back.Products.Doba.DobaApi.getListsForItemRequest request) {
+        NextCart.Back.Doba.DobaApi.getListsForItemResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getListsForItem(NextCart.Back.Doba.DobaApi.getListsForItemRequest request) {
             return base.Channel.getListsForItem(request);
         }
         
-        public ApiItemListInfo[] getListsForItem(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListsForItemRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getListsForItemRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getListsForItemRequest();
+        public ApiItemListInfo[] getListsForItem(NextCart.Back.Doba.DobaApi.ApiRetailerGetListsForItemRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getListsForItemRequest inValue = new NextCart.Back.Doba.DobaApi.getListsForItemRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getListsForItemResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getListsForItem(inValue);
+            NextCart.Back.Doba.DobaApi.getListsForItemResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getListsForItem(inValue);
             return retVal.getListsForItemReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getListsSummaryResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getListsSummary(NextCart.Back.Products.Doba.DobaApi.getListsSummaryRequest request) {
+        NextCart.Back.Doba.DobaApi.getListsSummaryResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getListsSummary(NextCart.Back.Doba.DobaApi.getListsSummaryRequest request) {
             return base.Channel.getListsSummary(request);
         }
         
-        public ApiListSummary[] getListsSummary(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetListsSummaryRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getListsSummaryRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getListsSummaryRequest();
+        public ApiListSummary[] getListsSummary(NextCart.Back.Doba.DobaApi.ApiRetailerGetListsSummaryRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getListsSummaryRequest inValue = new NextCart.Back.Doba.DobaApi.getListsSummaryRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getListsSummaryResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getListsSummary(inValue);
+            NextCart.Back.Doba.DobaApi.getListsSummaryResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getListsSummary(inValue);
             return retVal.getListsSummaryReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getProductDetailResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getProductDetail(NextCart.Back.Products.Doba.DobaApi.getProductDetailRequest request) {
+        NextCart.Back.Doba.DobaApi.getProductDetailResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getProductDetail(NextCart.Back.Doba.DobaApi.getProductDetailRequest request) {
             return base.Channel.getProductDetail(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiProductDetailResponse getProductDetail(NextCart.Back.Products.Doba.DobaApi.ApiRetailerProductDetailRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getProductDetailRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getProductDetailRequest();
+        public NextCart.Back.Doba.DobaApi.ApiProductDetailResponse getProductDetail(NextCart.Back.Doba.DobaApi.ApiRetailerProductDetailRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getProductDetailRequest inValue = new NextCart.Back.Doba.DobaApi.getProductDetailRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getProductDetailResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getProductDetail(inValue);
+            NextCart.Back.Doba.DobaApi.getProductDetailResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getProductDetail(inValue);
             return retVal.getProductDetailReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getProductExportsResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getProductExports(NextCart.Back.Products.Doba.DobaApi.getProductExportsRequest request) {
+        NextCart.Back.Doba.DobaApi.getProductExportsResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getProductExports(NextCart.Back.Doba.DobaApi.getProductExportsRequest request) {
             return base.Channel.getProductExports(request);
         }
         
-        public ApiProductExportInfo[] getProductExports(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetProductExportsRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getProductExportsRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getProductExportsRequest();
+        public ApiProductExportInfo[] getProductExports(NextCart.Back.Doba.DobaApi.ApiRetailerGetProductExportsRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getProductExportsRequest inValue = new NextCart.Back.Doba.DobaApi.getProductExportsRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getProductExportsResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getProductExports(inValue);
+            NextCart.Back.Doba.DobaApi.getProductExportsResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getProductExports(inValue);
             return retVal.getProductExportsReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getProductInventoryResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getProductInventory(NextCart.Back.Products.Doba.DobaApi.getProductInventoryRequest request) {
+        NextCart.Back.Doba.DobaApi.getProductInventoryResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getProductInventory(NextCart.Back.Doba.DobaApi.getProductInventoryRequest request) {
             return base.Channel.getProductInventory(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiProductInventoryResponse getProductInventory(NextCart.Back.Products.Doba.DobaApi.ApiRetailerProductInventoryRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getProductInventoryRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getProductInventoryRequest();
+        public NextCart.Back.Doba.DobaApi.ApiProductInventoryResponse getProductInventory(NextCart.Back.Doba.DobaApi.ApiRetailerProductInventoryRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getProductInventoryRequest inValue = new NextCart.Back.Doba.DobaApi.getProductInventoryRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getProductInventoryResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getProductInventory(inValue);
+            NextCart.Back.Doba.DobaApi.getProductInventoryResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getProductInventory(inValue);
             return retVal.getProductInventoryReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getRetailerLimitsResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getRetailerLimits(NextCart.Back.Products.Doba.DobaApi.getRetailerLimitsRequest request) {
+        NextCart.Back.Doba.DobaApi.getRetailerLimitsResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getRetailerLimits(NextCart.Back.Doba.DobaApi.getRetailerLimitsRequest request) {
             return base.Channel.getRetailerLimits(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiGetRetailerLimitsResponse getRetailerLimits(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetRetailerLimitsRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getRetailerLimitsRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getRetailerLimitsRequest();
+        public NextCart.Back.Doba.DobaApi.ApiGetRetailerLimitsResponse getRetailerLimits(NextCart.Back.Doba.DobaApi.ApiRetailerGetRetailerLimitsRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getRetailerLimitsRequest inValue = new NextCart.Back.Doba.DobaApi.getRetailerLimitsRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getRetailerLimitsResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getRetailerLimits(inValue);
+            NextCart.Back.Doba.DobaApi.getRetailerLimitsResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getRetailerLimits(inValue);
             return retVal.getRetailerLimitsReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getSpecialsResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getSpecials(NextCart.Back.Products.Doba.DobaApi.getSpecialsRequest request) {
+        NextCart.Back.Doba.DobaApi.getSpecialsResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getSpecials(NextCart.Back.Doba.DobaApi.getSpecialsRequest request) {
             return base.Channel.getSpecials(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiGetSpecialsResponse getSpecials(NextCart.Back.Products.Doba.DobaApi.ApiRetailerGetSpecialsRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getSpecialsRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getSpecialsRequest();
+        public NextCart.Back.Doba.DobaApi.ApiGetSpecialsResponse getSpecials(NextCart.Back.Doba.DobaApi.ApiRetailerGetSpecialsRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getSpecialsRequest inValue = new NextCart.Back.Doba.DobaApi.getSpecialsRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getSpecialsResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getSpecials(inValue);
+            NextCart.Back.Doba.DobaApi.getSpecialsResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getSpecials(inValue);
             return retVal.getSpecialsReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.getSuppliersResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.getSuppliers(NextCart.Back.Products.Doba.DobaApi.getSuppliersRequest request) {
+        NextCart.Back.Doba.DobaApi.getSuppliersResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.getSuppliers(NextCart.Back.Doba.DobaApi.getSuppliersRequest request) {
             return base.Channel.getSuppliers(request);
         }
         
-        public ApiSupplierResponse[] getSuppliers(NextCart.Back.Products.Doba.DobaApi.ApiRetailerSupplierRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.getSuppliersRequest inValue = new NextCart.Back.Products.Doba.DobaApi.getSuppliersRequest();
+        public ApiSupplierResponse[] getSuppliers(NextCart.Back.Doba.DobaApi.ApiRetailerSupplierRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.getSuppliersRequest inValue = new NextCart.Back.Doba.DobaApi.getSuppliersRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.getSuppliersResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getSuppliers(inValue);
+            NextCart.Back.Doba.DobaApi.getSuppliersResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).getSuppliers(inValue);
             return retVal.getSuppliersReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.modifyListsResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.modifyLists(NextCart.Back.Products.Doba.DobaApi.modifyListsRequest request) {
+        NextCart.Back.Doba.DobaApi.modifyListsResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.modifyLists(NextCart.Back.Doba.DobaApi.modifyListsRequest request) {
             return base.Channel.modifyLists(request);
         }
         
-        public ApiModifyListsResponse[] modifyLists(NextCart.Back.Products.Doba.DobaApi.ApiRetailerModifyListsRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.modifyListsRequest inValue = new NextCart.Back.Products.Doba.DobaApi.modifyListsRequest();
+        public ApiModifyListsResponse[] modifyLists(NextCart.Back.Doba.DobaApi.ApiRetailerModifyListsRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.modifyListsRequest inValue = new NextCart.Back.Doba.DobaApi.modifyListsRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.modifyListsResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).modifyLists(inValue);
+            NextCart.Back.Doba.DobaApi.modifyListsResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).modifyLists(inValue);
             return retVal.modifyListsReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        NextCart.Back.Products.Doba.DobaApi.searchCatalogResponse NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType.searchCatalog(NextCart.Back.Products.Doba.DobaApi.searchCatalogRequest request) {
+        NextCart.Back.Doba.DobaApi.searchCatalogResponse NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType.searchCatalog(NextCart.Back.Doba.DobaApi.searchCatalogRequest request) {
             return base.Channel.searchCatalog(request);
         }
         
-        public NextCart.Back.Products.Doba.DobaApi.ApiSearchCatalogResponse searchCatalog(NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchCatalogRequest objRequest) {
-            NextCart.Back.Products.Doba.DobaApi.searchCatalogRequest inValue = new NextCart.Back.Products.Doba.DobaApi.searchCatalogRequest();
+        public NextCart.Back.Doba.DobaApi.ApiSearchCatalogResponse searchCatalog(NextCart.Back.Doba.DobaApi.ApiRetailerSearchCatalogRequest objRequest) {
+            NextCart.Back.Doba.DobaApi.searchCatalogRequest inValue = new NextCart.Back.Doba.DobaApi.searchCatalogRequest();
             inValue.objRequest = objRequest;
-            NextCart.Back.Products.Doba.DobaApi.searchCatalogResponse retVal = ((NextCart.Back.Products.Doba.DobaApi.ApiRetailerSearchPortType)(this)).searchCatalog(inValue);
+            NextCart.Back.Doba.DobaApi.searchCatalogResponse retVal = ((NextCart.Back.Doba.DobaApi.ApiRetailerSearchPortType)(this)).searchCatalog(inValue);
             return retVal.searchCatalogReturn;
         }
     }

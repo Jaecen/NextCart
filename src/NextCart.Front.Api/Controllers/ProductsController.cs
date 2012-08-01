@@ -3,19 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Web.Http;
+using System.Reflection;
+using System.Reflection.Emit;
 
 namespace NextCart.Front.Api.Controllers
 {
     public class ProductsController : ApiController
     {
-        public IEnumerable<string> Get()
+        public dynamic Get(int? id)
         {
-            return new string[] { "value1", "value2" };
-        }
+			dynamic q = new
+			{
+				This = "is",
+				The = "one",
+				Id = id,
+			};
 
-        public string Get(string id)
-        {
-            return "value";
+			return q;
         }
     }
 }
