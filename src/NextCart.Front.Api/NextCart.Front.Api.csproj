@@ -131,9 +131,18 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NextCart.Contract.Adnsf\NextCart.Contract.Adnsf.csproj">
+      <Project>{04EDBFEB-472D-4B60-AC2E-08075651D5D3}</Project>
+      <Name>NextCart.Contract.Adnsf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NextCart.Contract.Core\NextCart.Contract.Core.csproj">
+      <Project>{B170538B-EFF8-4696-B382-C9E8FD1E2D6E}</Project>
+      <Name>NextCart.Contract.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

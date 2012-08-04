@@ -7,7 +7,7 @@ using Autofac;
 using Autofac.Builder;
 using Autofac.Integration.WebApi;
 
-namespace NextCart.Front.Api.App_Start
+namespace NextCart.Front.Api
 {
 	public class DependencyConfig
 	{
@@ -26,7 +26,6 @@ namespace NextCart.Front.Api.App_Start
 			// Set the dependency resolver implementation.
 			var resolver = new AutofacWebApiDependencyResolver(container);
 			configuration.DependencyResolver = resolver;
-
 		}
 	}
 }

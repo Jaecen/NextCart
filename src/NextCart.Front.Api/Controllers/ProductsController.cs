@@ -10,6 +10,9 @@ namespace NextCart.Front.Api.Controllers
 {
     public class ProductsController : ApiController
     {
+		public NextCart.Contract.Adnsf.IProductStore ProductStore
+		{ get; protected set; }
+
         public dynamic Get(int? id)
         {
 			dynamic q = new
